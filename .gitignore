@@ -1,0 +1,6 @@
+venv/
+best_model/
+data/
+__pycache__/
+.ipynb_checkpoints/
+densecap/

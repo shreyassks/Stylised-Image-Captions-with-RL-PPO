@@ -1,7 +1,16 @@
 # Multi Modal Multi Updown Personality Image Caption Generator
 
+This project is part of Deep Reinforcement Learning Course offered by CCE IISc 2023. 
+
+## PPT/Deck 
+Gdrive link - https://docs.google.com/presentation/d/1SCmFXfT_q5RatovdzyCfn-aFAJevO-jawT-O_Z9b4lg/edit?usp=sharing
+
+## Youtube Video of this Webinar
+Youtube link - https://youtu.be/lF6xyNUkiKI
+
 ## Architecture 
 ![Alt text](model_architecture.png?raw=true "Title")
+
 ## Pretrained Features
 1. Extract Dense captions features(follow the code by https://github.com/jcjohnson/densecap)
 2. ResNext features (We extract them by following the instructions under https://github.com/facebookresearch/ParlAI), the features we used are mean-pooled image  features saved in resnext101_32x48d_wsl/ and spatial feature saved in resnext101_32x48d_wsl_spatial_att/. 

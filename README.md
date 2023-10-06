@@ -1,14 +1,17 @@
-# 3M
+# Multi Modal Multi Updown Personality Image Caption Generator
+
 ## Architecture 
-![Alt text](architecture_3m.png?raw=true "Title")
+![Alt text](model_architecture.png?raw=true "Title")
 ## Pretrained Features
 1. Extract Dense captions features(follow the code by https://github.com/jcjohnson/densecap)
 2. ResNext features (We extract them by following the instructions under https://github.com/facebookresearch/ParlAI), the features we used are mean-pooled image  features saved in resnext101_32x48d_wsl/ and spatial feature saved in resnext101_32x48d_wsl_spatial_att/. 
-Note: we do not change the netwrok in dense caption or ResNext network, we just directly use the pretrained network to generate our features for stylish captioning task.
+
+Note: we do not change the network in dense caption or ResNext network, we just directly use the pretrained network to generate our features for stylish captioning task.
 ## Updates
 1. The images we didn't use is the ones cannot be downloaded from https://github.com/facebookresearch/ParlAI, which are ac8*.jpg
 2. I added img_caption.json (this files contains dense captions extracted from the images) into drive: https://drive.google.com/drive/folders/170palQ7QzRsY2ZRyaDTIQAcdHyuVZsFe?
 3. If there is any I remember later
+
 ## Example script for Data Processing
 1. prepare labels
 ```
@@ -103,40 +106,3 @@ python  denseeval3m.py --id $id \
 ## Large files you could get from us.
 Pretrained Model, extracted dense caption and reformated personality caption data could get from here:
 https://drive.google.com/drive/folders/170palQ7QzRsY2ZRyaDTIQAcdHyuVZsFe?
-# Reference
-```
-@inproceedings{johnson2016densecap,
-  title={Densecap: Fully convolutional localization networks for dense captioning},
-  author={Johnson, Justin and Karpathy, Andrej and Fei-Fei, Li},
-  booktitle={Proceedings of the IEEE conference on computer vision and pattern recognition},
-  pages={4565--4574},
-  year={2016}
-}
-@inproceedings{shuster2019engaging,
-  title={Engaging image captioning via personality},
-  author={Shuster, Kurt and Humeau, Samuel and Hu, Hexiang and Bordes, Antoine and Weston, Jason},
-  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
-  pages={12516--12526},
-  year={2019}
-}
-@inproceedings{anderson2018bottom,
-  title={Bottom-up and top-down attention for image captioning and visual question answering},
-  author={Anderson, Peter and He, Xiaodong and Buehler, Chris and Teney, Damien and Johnson, Mark and Gould, Stephen and Zhang, Lei},
-  booktitle={Proceedings of the IEEE conference on computer vision and pattern recognition},
-  pages={6077--6086},
-  year={2018}
-}
-```
-# Citation
-Cite this paper if you find anything useful or use the code.
-```
-@misc{2103.11186,
-Author = {Chengxi Li and Brent Harrison},
-Title = {3M: Multi-style image caption generation using Multi-modality features under Multi-UPDOWN model},
-Year = {2021},
-Eprint = {arXiv:2103.11186},
-}
-
-```
-# Acknowledge 
-A lot of code of here are derived from Ruotian's repo https://github.com/ruotianluo/self-critical.pytorch

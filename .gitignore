@@ -4,3 +4,6 @@ data/
 __pycache__/
 .ipynb_checkpoints/
 densecap/
+eval_results/
+.DS_Store
+.idea

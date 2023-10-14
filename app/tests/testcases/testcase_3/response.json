@@ -1,0 +1,14 @@
+{
+  "source_id": "flow",
+  "project_id": "my_flow_id",
+  "images": [
+    {
+      "image_url": "https://pbs.twimg.com/media/Fgg6SARXgAEYbm0.jpg",
+      "generated_captions": ["two zebras standing next to each other in a field",
+      "two zebras standing next to each other in a field",
+      "two zebras standing next to each other in a field",
+      "two zebras standing next to each other in a field",
+      "two zebras standing next to each other in a field"]
+    }
+  ]
+}

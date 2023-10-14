@@ -1,0 +1,12 @@
+{
+  "source_id": "flow",
+  "project_id": "my_flow_id",
+  "images": [
+    {
+      "image_url": "https://pbs.twimg.com/media/Fgg6SARXgAEYbm0.jpg"
+    },
+    {
+      "image_url": "https://pbs.twimg.com/media/Fgg6SARXgAEYbm0.jpg"
+    }
+  ]
+}

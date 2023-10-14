@@ -22,6 +22,9 @@ Youtube link - https://youtu.be/lF6xyNUkiKI
 ## Metric Improvement using RL Techniques
 ![Alt text](assets/metrics.png)
 
+## Stylized Captions
+![Alt text](assets/captions.png)
+
 ## Pretrained Features
 1. Extract Dense captions features(follow the code by https://github.com/jcjohnson/densecap)
 2. ResNext features (We extract them by following the instructions under https://github.com/facebookresearch/ParlAI), the features we used are mean-pooled image  features saved in resnext101_32x48d_wsl/ and spatial feature saved in resnext101_32x48d_wsl_spatial_att/. 
